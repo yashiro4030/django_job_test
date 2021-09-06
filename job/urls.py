@@ -6,7 +6,8 @@ from . import views
 
 urlpatterns = [
     
-    path('', views.job_list),
+    path('', views.job_list,name='liste'),
+    path('detail/<int:id>',views.job_detail,name='detail')
 
 ]
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job list</title>
+</head>
+<body>
+    JOB LIST
+
+    {% for x in joblist %}
+     
+    <h1>{{ x.title}}</h1>
+    <h2>{{x.descript}}</h2>
+    <h3>{{x.publish_at}}</h3>
+    <h3>{{x.job_type}}</h3>
+
+
+    {% endfor%}
+</body>
+</html>
